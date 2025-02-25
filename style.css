@@ -1,0 +1,763 @@
+@media (min-width: 990px){
+
+    body{
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(34, 33, 33);
+        box-sizing: border-box;
+    }
+    
+    .main{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 8px solid rgb(87, 87, 87);
+    }
+    
+    .main-bg{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.35);
+        object-fit: cover;
+    }
+    
+    .tint{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%);
+    }
+    
+    .content{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 550px;
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 5.8vmax;
+    }
+    
+    .title2{
+        font-size: 2.25vmax;
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .email{
+        height: 40px;
+        background: none;
+        border: 1px solid rgb(119, 119, 119);
+        border-radius: 3px;
+        color: rgb(163, 161, 161);
+        padding: 6px 165px 6px 18px;
+        font-size: 16px;
+    }
+    
+    .enter{
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(208, 0, 0);
+        height: 55px;
+        color: white;
+        padding: 6px 24px;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .enter:hover{
+        cursor: pointer;
+    }
+    
+    .enter-svg{
+        filter: invert(180);
+    }
+    
+    .nav{
+        position: absolute;
+        top: 50px;
+        left: 60%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .right{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .en{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 6px;
+        font-size: 14px;
+        height: 35px;
+        background: none;
+        border: 1px solid rgb(119, 119, 119);
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .en{
+        cursor: pointer;
+    }
+    
+    .svg{
+        filter: invert(1);
+    }
+    
+    .sign-in{
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(208, 0, 0);
+        color: white;
+        height: 35px;
+        padding: 6px 16px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .sign-in:hover{
+        cursor: pointer;
+    }
+    
+    .netflix-logo{
+        fill: rgb(208, 0, 0);
+        width: 160px;
+    }
+    
+    
+    .div{
+        background-color: black;
+        color: white;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        padding-left: 150px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-bottom: 8px solid rgb(87, 87, 87);
+        
+    }
+    
+    .left{
+        width: 50%;
+    }
+    
+    .heading{
+        font-size: 45px;
+    }
+    
+    .sub-heading{
+        font-size: 20px;
+    }
+    
+    .right{
+        position: relative;
+        width: 35%;
+        height: 60%;
+    }
+    
+    .netflix-tv{
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+    }
+    
+    .video{
+        position: absolute;
+        width: 80%;
+        left: 30px;
+        transform: scale(0.8);
+        top: 0;
+    }
+    
+    video{
+        position: absolute;
+        top: 20px;
+        z-index: 3;
+        transform: scale(0.75);
+        width: 100%;
+    }
+    
+    .last{
+        background-color: black;
+        width: 100%;
+        border: 1px solid black;
+        color: white;
+        padding: 100px 150px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-bottom: 8px solid rgb(87, 87, 87);
+    }
+    
+    .header{
+        font-size: 25px;
+    }
+    
+    .question{
+        background-color: rgb(46, 44, 44);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        transition: 0.3s;
+    }
+    
+    .question:hover{
+        background-color: rgb(69, 69, 69);
+        cursor: pointer;
+    }
+    
+    .question svg{
+        width: 30px;
+        filter: invert(1);
+    }
+    
+    .question .right{
+        width: fit-content;
+    }
+        
+}
+
+
+@media (min-width: 586px) and (max-width: 990px){
+
+    body{
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(34, 33, 33);
+        box-sizing: border-box;
+    }
+    
+    .main{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 8px solid rgb(87, 87, 87);
+    }
+    
+    .main-bg{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.35);
+        object-fit: cover;
+    }
+    
+    .tint{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%);
+    }
+    
+    .content{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 550px;
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 5.8vmax;
+    }
+    
+    .title2{
+        font-size: 2.25vmax;
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .email{
+        height: 40px;
+        background: none;
+        border: 1px solid rgb(119, 119, 119);
+        border-radius: 3px;
+        color: rgb(163, 161, 161);
+        padding: 6px 165px 6px 18px;
+        font-size: 16px;
+    }
+    
+    .enter{
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(208, 0, 0);
+        height: 55px;
+        color: white;
+        padding: 6px 24px;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .enter:hover{
+        cursor: pointer;
+    }
+    
+    .enter-svg{
+        filter: invert(180);
+    }
+    
+    .nav{
+        position: absolute;
+        top: 50px;
+        left: 10%;
+        width: 85%;
+        transform: translate(0, -50%);
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .right{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .en{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 6px;
+        font-size: 14px;
+        height: 35px;
+        background: none;
+        border: 1px solid rgb(119, 119, 119);
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .en{
+        cursor: pointer;
+    }
+    
+    .svg{
+        filter: invert(1);
+    }
+    
+    .sign-in{
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(208, 0, 0);
+        color: white;
+        height: 35px;
+        padding: 6px 10px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .sign-in:hover{
+        cursor: pointer;
+    }
+    
+    .netflix-logo{
+        fill: rgb(208, 0, 0);
+        width: 160px;
+    }
+    
+    
+    .div{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        padding-left: 4vw;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-bottom: 8px solid rgb(87, 87, 87);
+
+    }
+    
+    .left{
+        width: 50%;
+        text-align: center;
+    }
+    
+    .heading{
+        font-size: 45px;
+    }
+    
+    .sub-heading{
+        font-size: 20px;
+    }
+    
+    .right{
+        text-align: center;
+        position: relative;
+        width: 35%;
+        height: 60%;
+    }
+    
+    .netflix-tv{
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+    }
+    
+    .video{
+        position: absolute;
+        width: 80%;
+        left: 25px;
+        transform: scale(0.75);
+        top: 0;
+    }
+    
+    video{
+        position: absolute;
+        top: 18px;
+        z-index: 3;
+        transform: scale(0.75);
+        width: 100%;
+    }
+    
+    .last{
+        background-color: black;
+        width: 100%;
+        border: 1px solid black;
+        color: white;
+        padding: 100px 150px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-bottom: 8px solid rgb(87, 87, 87);
+    }
+    
+    .header{
+        font-size: 25px;
+    }
+    
+    .question{
+        background-color: rgb(46, 44, 44);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        transition: 0.3s;
+        align-items: center;
+    }
+    
+    .question:hover{
+        background-color: rgb(69, 69, 69);
+        cursor: pointer;
+    }
+    
+    .question svg{
+        width: 25px;
+        filter: invert(1);
+    }
+    
+    .question .right{
+        width: fit-content;
+    }
+
+    .question .left{
+        text-align: left;
+    }
+        
+}
+
+
+@media (max-width: 586px){
+
+    body{
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(34, 33, 33);
+        box-sizing: border-box;
+    }
+    
+    .main{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 8px solid rgb(87, 87, 87);
+    }
+    
+    .main-bg{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.35);
+        object-fit: cover;
+    }
+    
+    .tint{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%);
+    }
+    
+    .content{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(80vw);
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 5.8vmax;
+    }
+    
+    .title2{
+        font-size: 2.25vmax;
+    }
+    
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    .email{
+        height: 40px;
+        background: none;
+        border: 1px solid rgb(119, 119, 119);
+        border-radius: 3px;
+        color: rgb(163, 161, 161);
+        padding: 8px 80px 8px 8px;
+        font-size: 16px;
+    }
+    
+    .enter{
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(208, 0, 0);
+        height: 55px;
+        color: white;
+        padding: 8px 8px;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .enter:hover{
+        cursor: pointer;
+    }
+    
+    .enter-svg{
+        filter: invert(180);
+    }
+    
+    .nav{
+        position: absolute;
+        top: 50px;
+        left: 0%;
+        width: 100%;
+        transform: translate(-10%, -50%);
+        z-index: 3;
+        display: flex;
+        gap: 65px;
+    }
+    
+    .right{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .en{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 6px;
+        font-size: 14px;
+        height: 35px;
+        background: none;
+        border: 1px solid rgb(119, 119, 119);
+        border-radius: 3px;
+        color: white;
+    }
+    
+    .en{
+        cursor: pointer;
+    }
+    
+    .svg{
+        filter: invert(1);
+    }
+    
+    .sign-in{
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(208, 0, 0);
+        color: white;
+        height: 35px;
+        padding: 4px 6px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 200px;
+    }
+    
+    .sign-in:hover{
+        cursor: pointer;
+    }
+    
+    .netflix-logo{
+        fill: rgb(208, 0, 0);
+        width: 100px;
+    }
+    
+    
+    .div{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        padding-left: 4vw;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-bottom: 8px solid rgb(87, 87, 87);
+
+    }
+    
+    .left{
+        width: 50%;
+        text-align: center;
+    }
+    
+    .heading{
+        font-size: 45px;
+    }
+    
+    .sub-heading{
+        font-size: 20px;
+    }
+    
+    .right{
+        text-align: center;
+        position: relative;
+        width: 35%;
+        height: 60%;
+    }
+    
+    .netflix-tv{
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+    }
+    
+    .video{
+        position: absolute;
+        width: 80%;
+        left: 15px;
+        transform: scale(0.75);
+        top: 0;
+    }
+    
+    video{
+        position: absolute;
+        top: 5px;
+        z-index: 3;
+        transform: scale(0.75);
+        width: 100%;
+    }
+    
+    .last{
+        background-color: black;
+        width: 100%;
+        border: 1px solid black;
+        color: white;
+        padding: 100px 80px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-bottom: 8px solid rgb(87, 87, 87);
+    }
+    
+    .header{
+        font-size: 25px;
+    }
+    
+    .question{
+        background-color: rgb(46, 44, 44);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        transition: 0.3s;
+        align-items: center;
+    }
+    
+    .question:hover{
+        background-color: rgb(69, 69, 69);
+        cursor: pointer;
+    }
+    
+    .question svg{
+        width: 20px;
+        filter: invert(1);
+    }
+    
+    .question .right{
+        width: fit-content;
+    }
+
+    .question .left{
+        text-align: left;
+    }
+        
+}
